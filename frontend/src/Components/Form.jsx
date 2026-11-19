@@ -21,7 +21,6 @@ function Form({ isOpen, onClose }) {
     }, 1000);
   };
 
-  // If used as a modal and not open, don't render unless no onClose prop was provided (standalone mode)
   if (onClose && !isOpen) return null;
 
   const content = (
@@ -38,8 +37,18 @@ function Form({ isOpen, onClose }) {
       )}
 
       <div className="modal-header-block">
-        <div className="savera-logo-wrap mx-auto mb-2" style={{ width: '48px', height: '48px' }}>
-          <img src="/logo.jpg" alt="SAVÉRA Logo" className="savera-logo-img" />
+        <div className="savera-logo-box mx-auto mb-3" style={{ width: '48px', height: '48px' }}>
+          <svg className="savera-aviation-emblem" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" stroke="#D9B477" strokeWidth="1.2" strokeOpacity="0.6" />
+            <path
+              d="M20 7L24 16L33 19L24 22L20 33L16 22L7 19L16 16L20 7Z"
+              fill="#D9B477"
+              fillOpacity="0.3"
+              stroke="#D9B477"
+              strokeWidth="1.4"
+            />
+            <circle cx="20" cy="19.5" r="2.2" fill="#D9B477" />
+          </svg>
         </div>
         <div className="luxury-badge mb-2">SECURE OCC GATEWAY</div>
         <h3 className="modal-title">Staff Portal Authorization</h3>
@@ -49,12 +58,12 @@ function Form({ isOpen, onClose }) {
       </div>
 
       {loginSuccess ? (
-        <div className="p-4 text-center rounded" style={{ background: 'rgba(52, 211, 153, 0.15)', border: '1px solid rgba(52, 211, 153, 0.4)' }}>
+        <div className="p-4 text-center rounded-4" style={{ background: 'rgba(52, 211, 153, 0.15)', border: '1px solid rgba(52, 211, 153, 0.4)' }}>
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#34d399" strokeWidth="2.5" className="mb-2">
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
-          <h4 style={{ color: '#fff', fontFamily: 'var(--font-serif)', fontSize: '1.2rem' }}>Authorization Verified</h4>
-          <p style={{ color: '#cbd5e1', fontSize: '0.85rem', margin: 0 }}>
+          <h4 style={{ color: '#FFFFFF', fontFamily: 'var(--font-serif)', fontSize: '1.25rem', marginBottom: '6px' }}>Authorization Verified</h4>
+          <p style={{ color: '#CBD5E1', fontSize: '0.86rem', margin: 0 }}>
             Connecting to SAVÉRA OCC Dispatch Network...
           </p>
         </div>
@@ -94,7 +103,7 @@ function Form({ isOpen, onClose }) {
           <div className="savera-form-group">
             <div className="d-flex justify-content-between align-items-center mb-1">
               <label htmlFor="staffPassword" className="savera-form-label mb-0">Security Passcode</label>
-              <a href="#reset" style={{ fontSize: '0.75rem', color: 'var(--gold-400)' }}>Reset Passcode?</a>
+              <a href="#reset" style={{ fontSize: '0.75rem', color: 'var(--champagne-gold)' }}>Reset Passcode?</a>
             </div>
             <input
               type="password"
@@ -114,11 +123,11 @@ function Form({ isOpen, onClose }) {
                 type="checkbox"
                 checked={rememberMe}
                 onChange={(e) => setRememberMe(e.target.checked)}
-                style={{ accentColor: 'var(--gold-500)', width: '16px', height: '16px' }}
+                style={{ accentColor: 'var(--champagne-gold)', width: '16px', height: '16px' }}
               />
               Remember this station terminal
             </label>
-            <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>256-Bit Encrypted</span>
+            <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>256-Bit TLS Encrypted</span>
           </div>
 
           {/* Submit Button */}
@@ -139,7 +148,13 @@ function Form({ isOpen, onClose }) {
   );
 
   if (onClose) {
-    return <div className="savera-modal-backdrop" onClick={onClose}><div onClick={(e) => e.stopPropagation()}>{content}</div></div>;
+    return (
+      <div className="savera-modal-backdrop" onClick={onClose}>
+        <div onClick={(e) => e.stopPropagation()}>
+          {content}
+        </div>
+      </div>
+    );
   }
 
   return content;

@@ -1,66 +1,90 @@
 /* ==========================================================================
    SAVÉRA – Aviation Technologies | Luxury Airline Operations Platform
-   Theme: Midnight Navy, Champagne Gold, Ivory & Royal Purple
+   Color Palette:
+     Midnight Navy:  #050A18
+     Deep Black:     #090D19
+     Champagne Gold: #D9B477
+     Soft Gold:      #F3D8A4
+     Warm Ivory:     #F6EBDD
+     Pure White:     #FFFFFF
+   Typography:
+     Headings: Playfair Display
+     Body:     Inter
    ========================================================================== */
 
 :root {
-  /* Core Color Palette */
-  --navy-950: #040711;
-  --navy-900: #070c1b;
-  --navy-850: #0a1126;
-  --navy-800: #0f1836;
-  --navy-700: #17234d;
-  --navy-border: rgba(212, 175, 55, 0.22);
-  --navy-glass: rgba(8, 14, 33, 0.75);
+  /* Core Luxury Color Palette */
+  --midnight-navy: #050A18;
+  --deep-black: #090D19;
+  --champagne-gold: #D9B477;
+  --soft-gold: #F3D8A4;
+  --warm-ivory: #F6EBDD;
+  --pure-white: #FFFFFF;
+
+  /* Extended System Tones */
+  --navy-950: #050A18;
+  --navy-900: #090D19;
+  --navy-850: #0e1526;
+  --navy-800: #141f38;
+  --navy-700: #1b294c;
+  --navy-card: rgba(9, 13, 25, 0.82);
+  --navy-glass: rgba(5, 10, 24, 0.88);
+  --navy-border: rgba(217, 180, 119, 0.22);
+  --navy-border-light: rgba(217, 180, 119, 0.12);
 
   /* Champagne Gold Accents */
-  --gold-300: #fbf0d0;
-  --gold-400: #ebd07d;
-  --gold-500: #d4af37;
-  --gold-600: #b89122;
-  --gold-700: #8c6e16;
-  --gold-glow: rgba(212, 175, 55, 0.35);
-  --gold-subtle: rgba(212, 175, 55, 0.12);
-  --gold-gradient: linear-gradient(135deg, #fbf0d0 0%, #d4af37 50%, #9e791b 100%);
-  --gold-border-gradient: linear-gradient(135deg, rgba(251, 240, 208, 0.5), rgba(212, 175, 55, 0.2), rgba(158, 121, 27, 0.4));
+  --gold-300: #F3D8A4;
+  --gold-400: #E6C58B;
+  --gold-500: #D9B477;
+  --gold-600: #B8924B;
+  --gold-700: #8C6B26;
+  --gold-glow: rgba(217, 180, 119, 0.32);
+  --gold-subtle: rgba(217, 180, 119, 0.1);
+  --gold-gradient: linear-gradient(135deg, #F3D8A4 0%, #D9B477 55%, #B8924B 100%);
+  --gold-gradient-soft: linear-gradient(135deg, #FFFFFF 0%, #F3D8A4 45%, #D9B477 100%);
+  --gold-border-gradient: linear-gradient(135deg, rgba(243, 216, 164, 0.5), rgba(217, 180, 119, 0.2), rgba(184, 146, 75, 0.4));
 
-  /* Royal Purple (FlightRipple™ Signature) */
-  --purple-900: #2e0854;
-  --purple-800: #4c1d95;
-  --purple-700: #5b21b6;
-  --purple-600: #7c3aed;
-  --purple-500: #8b5cf6;
-  --purple-400: #a78bfa;
-  --purple-glow: rgba(139, 92, 246, 0.4);
-  --purple-glow-subtle: rgba(124, 58, 237, 0.18);
-  --purple-gradient: linear-gradient(135deg, #7c3aed 0%, #4c1d95 60%, #2e0854 100%);
+  /* Royal Purple (FlightRipple™ Signature Accents) */
+  --purple-900: #1A0D38;
+  --purple-800: #361769;
+  --purple-700: #5524A0;
+  --purple-600: #7C3AED;
+  --purple-500: #9353FA;
+  --purple-400: #A855F7;
+  --purple-300: #C084FC;
+  --purple-glow: rgba(168, 85, 247, 0.4);
+  --purple-gradient: linear-gradient(135deg, #C084FC 0%, #A855F7 45%, #7C3AED 100%);
 
-  /* Ivory / Cream (About Section & Contrast) */
-  --ivory-100: #fdfbf7;
-  --ivory-200: #f8f5ee;
-  --ivory-300: #f0ebe0;
-  --ivory-400: #e2d9c8;
-  --ivory-text: #0a0f24;
-  --ivory-muted: #52596f;
+  /* Warm Ivory Contrast Theme */
+  --ivory-bg: #F6EBDD;
+  --ivory-100: #FCF8F2;
+  --ivory-200: #F6EBDD;
+  --ivory-300: #EADBCA;
+  --ivory-400: #D8C3AC;
+  --ivory-text: #050A18;
+  --ivory-muted: #4B5267;
+  --ivory-border: rgba(140, 107, 38, 0.22);
 
   /* Typography */
-  --font-serif: 'Cinzel', 'Playfair Display', Georgia, serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-accent: 'Cinzel', serif;
 
-  /* Text Colors */
-  --text-main: #f8fafc;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
-  --text-gold: #ebd07d;
+  /* Text Colors & Contrast */
+  --text-pure: #FFFFFF;
+  --text-main: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-gold: #F3D8A4;
 
-  /* Effects */
-  --card-radius: 16px;
-  --glass-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
-  --gold-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.25);
-  --purple-shadow: 0 15px 35px -10px rgba(124, 58, 237, 0.35);
+  /* Radii & Shadows */
+  --card-radius: 18px;
+  --glass-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.75);
+  --gold-shadow: 0 12px 32px -10px rgba(217, 180, 119, 0.28);
+  --purple-shadow: 0 16px 36px -10px rgba(124, 58, 237, 0.35);
 }
 
-/* Base Reset & Setup */
+/* Base Setup */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -68,7 +92,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  background-color: var(--navy-950);
+  background-color: var(--midnight-navy);
 }
 
 body {
@@ -76,11 +100,12 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: var(--navy-950);
+  background-color: var(--midnight-navy);
   color: var(--text-main);
   font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.65;
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -95,15 +120,15 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--navy-950);
+  background-color: var(--midnight-navy);
 }
 
-/* Typography Presets */
-h1, h2, h3, h4, h5, h6, .brand-title, .serif-heading {
+/* Headings with Playfair Display */
+h1, h2, h3, h4, h5, h6, .serif-heading {
   font-family: var(--font-serif);
   font-weight: 600;
-  letter-spacing: 0.03em;
-  color: var(--text-main);
+  letter-spacing: -0.015em;
+  color: var(--pure-white);
 }
 
 p {
@@ -112,16 +137,16 @@ p {
 }
 
 a {
-  color: var(--gold-400);
+  color: var(--champagne-gold);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 a:hover {
-  color: var(--gold-300);
+  color: var(--soft-gold);
 }
 
-/* Luxury Gold Text Gradient */
+/* Typography Gradient Utility */
 .gold-text-gradient {
   background: var(--gold-gradient);
   -webkit-background-clip: text;
@@ -129,33 +154,40 @@ a:hover {
   display: inline-block;
 }
 
-/* Luxury Royal Purple Text Gradient */
-.purple-text-gradient {
-  background: linear-gradient(135deg, #c084fc 0%, #a855f7 40%, #7c3aed 100%);
+.gold-text-gradient-soft {
+  background: var(--gold-gradient-soft);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
-/* Eyebrow / Badges */
+.purple-text-gradient {
+  background: var(--purple-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Luxury Eyebrows / Badges */
 .luxury-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 6px 16px;
-  font-size: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold-400);
-  background: rgba(212, 175, 55, 0.08);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--soft-gold);
+  background: rgba(217, 180, 119, 0.08);
+  border: 1px solid rgba(217, 180, 119, 0.28);
   border-radius: 999px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 .luxury-badge.purple {
-  color: #c084fc;
+  color: var(--purple-300);
   background: rgba(124, 58, 237, 0.12);
   border-color: rgba(168, 85, 247, 0.35);
 }
@@ -163,9 +195,9 @@ a:hover {
 .beacon-dot {
   width: 7px;
   height: 7px;
-  background-color: var(--gold-500);
+  background-color: var(--champagne-gold);
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--gold-500);
+  box-shadow: 0 0 10px var(--champagne-gold);
   animation: beaconPulse 2s infinite ease-in-out;
 }
 
@@ -176,21 +208,21 @@ a:hover {
 
 @keyframes beaconPulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(1.3); }
+  50% { opacity: 0.45; transform: scale(1.3); }
 }
 
-/* Custom Scrollbar */
+/* Custom Luxury Scrollbar */
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--navy-950);
+  background: var(--midnight-navy);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(212, 175, 55, 0.25);
+  background: rgba(217, 180, 119, 0.25);
   border-radius: 6px;
-  border: 2px solid var(--navy-950);
+  border: 2px solid var(--midnight-navy);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gold-500);
+  background: var(--champagne-gold);
 }

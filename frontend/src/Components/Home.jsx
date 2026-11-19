@@ -14,7 +14,7 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       crewStatus: 'Rest Expiry Protected via Reserve Crew Swap',
       aircraftStatus: 'Standby B787 Tail Reassigned at JFK Gate 4',
       costSaved: '$54,200 Cascade Delay Cost Neutralized',
-      recommendation: 'Automated 12-minute turnaround compression + gate swap enabled.'
+      recommendation: 'Automated 12-minute turnaround compression + gate swap enabled.',
     },
     {
       id: 1,
@@ -25,7 +25,7 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       crewStatus: 'Duty Period Valid (No Violation)',
       aircraftStatus: 'Turnaround Accelerated from 60m to 42m',
       costSaved: '$38,600 Missed Connection Claims Saved',
-      recommendation: 'Priority baggage routing & expedited ATC taxi clearance.'
+      recommendation: 'Priority baggage routing & expedited ATC taxi clearance.',
     },
     {
       id: 2,
@@ -36,20 +36,20 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       crewStatus: 'Crew Pairing Shifted to SV-321',
       aircraftStatus: 'A350 Tail Swap with Hangar Standby Unit',
       costSaved: '$82,000 EU261 Passenger Compensation Saved',
-      recommendation: 'Tech log clearance synced with engineering line station.'
-    }
+      recommendation: 'Tech log clearance synced with engineering line station.',
+    },
   ];
 
-  // Six Feature Cards Data
+  // Six Feature Cards Data (Strictly matching prompt specifications)
   const platformFeatures = [
     {
       number: '01',
       title: 'Flight Management',
       shortDesc: 'Manage flights with ease.',
-      fullDesc: 'Manage flight details, flight numbers, routes and real-time flight status in one organized platform.',
-      tags: ['Live Tracking', 'Route Control', 'Status Radar'],
+      fullDesc: 'Manage flight details, flight numbers, international routes and real-time flight status in one organized platform.',
+      tags: ['Live Radar', 'Route Control', 'Status Telemetry'],
       icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"></path>
         </svg>
       ),
@@ -58,10 +58,10 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       number: '02',
       title: 'Aircraft Management',
       shortDesc: 'Track and allocate aircraft.',
-      fullDesc: 'Monitor aircraft information, availability, assigned flights and operational records efficiently.',
-      tags: ['Fleet Utilization', 'Tail Allocation', 'Cabin Config'],
+      fullDesc: 'Monitor aircraft information, availability, assigned flights, tail utilization cycles and operational records efficiently.',
+      tags: ['Fleet Tracking', 'Tail Allocation', 'Cabin Config'],
       icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 2v20M2 12h20"></path>
           <path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"></path>
         </svg>
@@ -71,10 +71,10 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       number: '03',
       title: 'Crew Management',
       shortDesc: 'Plan your crew perfectly.',
-      fullDesc: 'Organize crew information, duty assignments and flight crew schedules in one place.',
+      fullDesc: 'Organize crew rosters, duty assignments, fatigue risk indexes and pilot-cabin pairings in one compliant system.',
       tags: ['Fatigue Risk', 'Duty Limits', 'Roster Pairing'],
       icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
           <circle cx="9" cy="7" r="4"></circle>
           <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -86,10 +86,10 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       number: '04',
       title: 'Flight Scheduling',
       shortDesc: 'Optimize schedules smartly.',
-      fullDesc: 'Create and manage flight schedules while coordinating aircraft and crew assignments.',
-      tags: ['Seasonal Rotations', 'Airport Slots', 'Turnaround Sync'],
+      fullDesc: 'Create and manage flight schedules while coordinating airport slots, turnaround synchronization, and aircraft rotations.',
+      tags: ['Airport Slots', 'Turnaround Sync', 'Rotations'],
       icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
           <line x1="16" y1="2" x2="16" y2="6"></line>
           <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -99,13 +99,13 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
     },
     {
       number: '05',
-      title: 'FlightRipple™',
+      title: 'FlightRipple',
       shortDesc: 'Experience smarter operations.',
-      fullDesc: 'Analyze how flight delays can affect connected flights, aircraft availability and crew schedules.',
-      tags: ['Disruption AI', 'Cascade Predictor', 'OCC Synchronizer'],
+      fullDesc: 'Analyze how flight delays affect connected flights, aircraft availability and crew schedules with instant cascade mitigation.',
+      tags: ['Disruption AI', 'Cascade Predictor', 'OCC Sync'],
       isSpecial: true,
       icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="2"></circle>
           <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
         </svg>
@@ -115,10 +115,10 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       number: '06',
       title: 'Maintenance',
       shortDesc: 'Keep your fleet ready always.',
-      fullDesc: 'Maintain aircraft maintenance records, inspection schedules and service history.',
+      fullDesc: 'Maintain aircraft maintenance records, line inspection schedules, digital tech logs and airworthiness certification history.',
       tags: ['A/B/C/D Checks', 'Tech Log', 'Airworthiness'],
       icon: (
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
         </svg>
       ),
@@ -128,14 +128,14 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
   return (
     <>
       {/* ====================================================================
-          4. OUR PLATFORM – SIX FEATURE CARDS
+          SECTION 3: OUR PLATFORM – SIX PREMIUM FEATURE CARDS
           ==================================================================== */}
       <section id="features" className="savera-platform-section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header text-center">
             <div className="luxury-badge mb-3">
               <span className="beacon-dot"></span>
-              CORE OPERATIONS SUITE
+              OUR PLATFORM
             </div>
             <h2 className="section-title">
               One Platform.{' '}
@@ -165,22 +165,27 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
                     {feat.title}
                   </h3>
 
+                  <div className="card-short-desc">
+                    {feat.shortDesc}
+                  </div>
+
                   <p className="card-desc">
-                    <strong style={{ color: feat.isSpecial ? '#c084fc' : 'var(--gold-400)' }}>{feat.shortDesc}</strong>{' '}
                     {feat.fullDesc}
                   </p>
                 </div>
 
-                <div>
+                <div className="card-footer-box">
                   <div className="card-tags">
                     {feat.tags.map((t, i) => (
                       <span key={i} className="card-tag-pill">{t}</span>
                     ))}
                   </div>
 
+                  {/* Elegant Circular Arrow Button */}
                   <a
                     href={feat.isSpecial ? '#flightripple' : '#about'}
-                    className="card-action-link"
+                    className="card-circular-btn"
+                    aria-label={`Explore ${feat.title}`}
                     onClick={(e) => {
                       if (onSelectFeature) {
                         e.preventDefault();
@@ -188,8 +193,7 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
                       }
                     }}
                   >
-                    <span>Explore Capability</span>
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
                       <line x1="5" y1="12" x2="19" y2="12"></line>
                       <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
@@ -202,22 +206,22 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       </section>
 
       {/* ====================================================================
-          5. ABOUT SAVÉRA (SPLIT LAYOUT: AIRPORT LOUNGE & CREAM/IVORY CARD)
+          SECTION 4: ABOUT SAVÉRA (LUXURY SPLIT LAYOUT WITH WARM IVORY CARD)
           ==================================================================== */}
       <section id="about" className="savera-about-section">
         <div className="container">
           <div className="about-split-grid">
-            {/* Left Side: Luxury Airport Lounge Image */}
+            {/* Left Column: Luxury Aviation Terminal / Lounge Image */}
             <div className="about-image-frame">
               <img
                 src="/port.jpg"
-                alt="Luxury Airport Lounge Terminal"
+                alt="SAVÉRA Luxury Aviation Terminal and Executive Lounge"
                 className="about-img"
               />
 
-              {/* Floating Glass Badges */}
+              {/* Floating Benchmark Badges */}
               <div className="floating-badge-top">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ebd07d" strokeWidth="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9B477" strokeWidth="2">
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                 </svg>
                 <span>GLOBAL AVIATION BENCHMARK</span>
@@ -229,16 +233,16 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
               </div>
             </div>
 
-            {/* Right Side: Cream / Ivory Background with Elegant Text */}
+            {/* Right Column: Warm Ivory Background with Elegant Black Typography & Champagne Gold Accents */}
             <div className="about-ivory-card text-start">
-              <span className="ivory-eyebrow">A NEW ERA IN AVIATION INTELLIGENCE</span>
+              <div className="ivory-eyebrow">ABOUT SAVÉRA</div>
 
               <h2 className="ivory-heading">
                 Redefining Airline Operations for a Smarter Tomorrow.
               </h2>
 
               <p className="ivory-desc">
-                SAVÉRA is an airline operations platform designed to bring efficiency, coordination and clarity to airline operations.
+                SAVÉRA is a next-generation airline operations platform, designed to bring efficiency, intelligence and elegance to the skies.
               </p>
 
               <div className="ivory-features-list">
@@ -276,9 +280,9 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
               <button
                 type="button"
                 className="btn-ivory-learn"
-                onClick={() => onOpenContact && onOpenContact()}
+                onClick={() => onOpenContact && onOpenContact('SAVÉRA Executive Briefing')}
               >
-                Learn More
+                <span>Learn More</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
@@ -290,19 +294,20 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       </section>
 
       {/* ====================================================================
-          6. SPECIAL FEATURE – FLIGHTRIPPLE™ (SIGNATURE FEATURE)
+          SECTION 5: FLIGHTRIPPLE – SPECIAL FEATURE (NIGHT-LIGHT EXPERIENCE)
           ==================================================================== */}
       <section id="flightripple" className="savera-flightripple-section">
-        {/* Deep Cosmic Purple Ambient Glows */}
-        <div className="ripple-cosmic-glow-1"></div>
-        <div className="ripple-cosmic-glow-2"></div>
+        {/* Starry Night Sky Ambient Canvas & Glowing Light Trails */}
+        <div className="ripple-starfield" aria-hidden="true"></div>
+        <div className="ripple-cosmic-glow-1" aria-hidden="true"></div>
+        <div className="ripple-cosmic-glow-2" aria-hidden="true"></div>
 
-        <div className="container">
+        <div className="container position-relative" style={{ zIndex: 2 }}>
           {/* Section Header */}
-          <div className="ripple-header-center">
+          <div className="ripple-header-center text-center">
             <div className="luxury-badge purple mb-3">
               <span className="beacon-dot purple"></span>
-              SIGNATURE IMPACT ANALYSIS ENGINE
+              OUR SPECIAL FEATURE
             </div>
 
             <h2 className="flightripple-brand-title purple-text-gradient">
@@ -314,36 +319,52 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
             </p>
 
             <p className="flightripple-desc">
-              An advanced operational impact analysis feature that helps airlines understand how flight delays can affect connected flights, aircraft assignments and crew schedules.
+              An advanced intelligent system that synchronizes flights, schedules and resources in real time, with unmatched precision.
             </p>
           </div>
 
-          {/* Aircraft Night Sky & Glowing Ripple Visual Stage */}
+          {/* Night-Light Visual Experience & Interactive Cascade Disruption Stage */}
           <div className="ripple-visual-stage">
-            {/* Cinematic Night Aircraft Backdrop */}
+            {/* Cinematic Night Airplane Backdrop with Starlight & Illuminated Runway Skyline */}
             <div className="ripple-stage-bg">
-              <img src="/airo.jpg" alt="Aircraft in Night Sky" />
+              <img src="/airo.jpg" alt="Aviation Aircraft Flying in Night Sky with Starlight" />
+              <div className="ripple-night-overlay"></div>
             </div>
 
-            {/* Concentric Animated Ripple Waves */}
-            <div className="ripple-waves-container">
-              <div className="ripple-wave-circle"></div>
-              <div className="ripple-wave-circle"></div>
-              <div className="ripple-wave-circle"></div>
+            {/* Glowing Golden Flight Paths & Coordinate Nodes */}
+            <div className="ripple-flight-arcs" aria-hidden="true">
+              <svg className="flight-arcs-svg" viewBox="0 0 1000 400" fill="none">
+                <defs>
+                  <linearGradient id="goldFlightArc" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#D9B477" stopOpacity="0.1" />
+                    <stop offset="50%" stopColor="#F3D8A4" stopOpacity="0.9" />
+                    <stop offset="100%" stopColor="#D9B477" stopOpacity="0.1" />
+                  </linearGradient>
+                  <linearGradient id="purpleFlightArc" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#7C3AED" stopOpacity="0.2" />
+                    <stop offset="50%" stopColor="#C084FC" stopOpacity="0.9" />
+                    <stop offset="100%" stopColor="#7C3AED" stopOpacity="0.2" />
+                  </linearGradient>
+                </defs>
+                {/* Transatlantic Arc */}
+                <path d="M 120 280 Q 500 60 880 280" stroke="url(#goldFlightArc)" strokeWidth="2.5" strokeDasharray="6 6" className="animated-flight-path" />
+                {/* Pacific Radial Arc */}
+                <path d="M 180 320 Q 520 140 820 310" stroke="url(#purpleFlightArc)" strokeWidth="2" strokeDasharray="4 6" className="animated-flight-path-reverse" />
+              </svg>
             </div>
 
             {/* Interactive Cascade Simulator Layout */}
             <div className="ripple-sim-layout text-start">
-              {/* Left Control Column */}
+              {/* Left Column: Disruption Selection */}
               <div className="ripple-sim-control">
                 <div className="sim-control-title">
                   <span>Simulate Delay Cascade</span>
-                  <span className="badge" style={{ background: 'rgba(124, 58, 237, 0.3)', color: '#c084fc', fontSize: '0.75rem' }}>
+                  <span className="badge-live-demo">
                     OCC LIVE DEMO
                   </span>
                 </div>
-                <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                  Select an operational disruption to observe FlightRipple™ resolve downstream cascading effects:
+                <p className="sim-control-desc">
+                  Select an operational disruption to observe FlightRipple™ resolve downstream cascading delays:
                 </p>
 
                 {rippleScenarios.map((sc, idx) => (
@@ -354,26 +375,24 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
                     onClick={() => setActiveScenario(idx)}
                   >
                     <div>
-                      <div style={{ fontWeight: '600', color: activeScenario === idx ? '#fff' : 'var(--text-secondary)' }}>
+                      <div className="scenario-flight-name">
                         {sc.flight}
                       </div>
-                      <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                      <div className="scenario-delay-reason">
                         {sc.delayReason}
                       </div>
                     </div>
-                    <span style={{ fontSize: '0.75rem', color: activeScenario === idx ? 'var(--gold-400)' : 'var(--text-muted)' }}>
-                      ➔
-                    </span>
+                    <span className="scenario-arrow">➔</span>
                   </button>
                 ))}
               </div>
 
-              {/* Right Telemetry Column */}
+              {/* Right Column: Dynamic Telemetry Output */}
               <div className="ripple-telemetry-panel">
                 <div className="d-flex justify-content-between align-items-center mb-3">
                   <div className="d-flex align-items-center gap-2">
                     <span className="beacon-dot purple"></span>
-                    <strong style={{ color: '#fff', fontSize: '0.98rem' }}>
+                    <strong style={{ color: '#FFFFFF', fontSize: '1rem', letterSpacing: '0.02em' }}>
                       Ripple Resolution Output
                     </strong>
                   </div>
@@ -410,11 +429,11 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
                   </span>
                 </div>
 
-                <div className="p-3 mt-3 rounded" style={{ background: 'rgba(124, 58, 237, 0.12)', border: '1px solid rgba(168, 85, 247, 0.3)' }}>
-                  <div style={{ fontSize: '0.76rem', color: 'var(--gold-400)', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 'bold', marginBottom: '4px' }}>
+                <div className="ripple-rec-box">
+                  <div className="rec-box-title">
                     FlightRipple™ Recommendation
                   </div>
-                  <div style={{ fontSize: '0.85rem', color: '#e2e8f0' }}>
+                  <div className="rec-box-body">
                     {rippleScenarios[activeScenario].recommendation}
                   </div>
                 </div>
@@ -422,10 +441,17 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
             </div>
           </div>
 
-          {/* Four Signature Capabilities */}
+          {/* Four Capabilities Cards (Matching prompt specifications) */}
           <div className="ripple-caps-grid text-start">
             <div className="ripple-cap-card">
-              <div className="cap-num">01 / CAPABILITY</div>
+              <div className="cap-top-row">
+                <div className="cap-num">01 / CAPABILITY</div>
+                <div className="cap-icon-gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+              </div>
               <h3 className="cap-title">Real-time Flight Sync</h3>
               <p className="cap-desc">
                 Instant telemetry and radar synchronization transmits flight status updates across OCC and station dispatch in milliseconds.
@@ -433,7 +459,15 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
             </div>
 
             <div className="ripple-cap-card">
-              <div className="cap-num">02 / CAPABILITY</div>
+              <div className="cap-top-row">
+                <div className="cap-num">02 / CAPABILITY</div>
+                <div className="cap-icon-gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+              </div>
               <h3 className="cap-title">Smart Resource Allocation</h3>
               <p className="cap-desc">
                 AI engines dynamically compute standby tail availability, gate turnarounds, and ground crew handling schedules.
@@ -441,7 +475,17 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
             </div>
 
             <div className="ripple-cap-card">
-              <div className="cap-num">03 / CAPABILITY</div>
+              <div className="cap-top-row">
+                <div className="cap-num">03 / CAPABILITY</div>
+                <div className="cap-icon-gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+              </div>
               <h3 className="cap-title">Seamless Collaboration</h3>
               <p className="cap-desc">
                 Bridges pilots, cabin crew schedulers, ground teams, and engineering in a single unified communication channel.
@@ -449,7 +493,15 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
             </div>
 
             <div className="ripple-cap-card">
-              <div className="cap-num">04 / CAPABILITY</div>
+              <div className="cap-top-row">
+                <div className="cap-num">04 / CAPABILITY</div>
+                <div className="cap-icon-gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                    <polyline points="17 6 23 6 23 12"></polyline>
+                  </svg>
+                </div>
+              </div>
               <h3 className="cap-title">Enhanced Efficiency</h3>
               <p className="cap-desc">
                 Prevents disruption cascades, protecting on-time metrics and reducing passenger compensation costs by up to 34%.
@@ -458,7 +510,7 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
           </div>
 
           {/* Explore FlightRipple CTA */}
-          <div className="text-center">
+          <div className="text-center mt-5">
             <button
               type="button"
               className="btn-explore-ripple"
@@ -475,11 +527,11 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       </section>
 
       {/* ====================================================================
-          7. HOW IT WORKS – 3 SIMPLE STEPS
+          SECTION 6: HOW IT WORKS – 3 SIMPLE STEPS
           ==================================================================== */}
       <section id="how-it-works" className="savera-how-section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header text-center">
             <div className="luxury-badge mb-3">
               <span className="beacon-dot"></span>
               SEAMLESS IMPLEMENTATION
@@ -493,9 +545,6 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
           </div>
 
           <div className="steps-container">
-            {/* Connecting Golden Progress Line */}
-            <div className="step-connecting-line"></div>
-
             {/* Step 1 */}
             <div className="step-card">
               <div className="step-icon-circle">
@@ -508,16 +557,32 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
               </p>
             </div>
 
+            {/* Connecting Arrow (Desktop) */}
+            <div className="step-arrow-divider d-none d-lg-flex" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D9B477" strokeWidth="1.8">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+
             {/* Step 2 */}
             <div className="step-card">
               <div className="step-icon-circle">
                 <span className="step-number">02</span>
               </div>
               <h3 className="step-title">Optimize</h3>
-              <div className="step-subtitle">Coordinate and streamline operations.</div>
+              <div className="step-subtitle">Automate and streamline processes.</div>
               <p className="step-desc">
                 Connect live aircraft tracking, harmonize turnarounds, and resolve operational bottlenecks with FlightRipple™ intelligence.
               </p>
+            </div>
+
+            {/* Connecting Arrow (Desktop) */}
+            <div className="step-arrow-divider d-none d-lg-flex" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D9B477" strokeWidth="1.8">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
             </div>
 
             {/* Step 3 */}
@@ -536,20 +601,30 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
       </section>
 
       {/* ====================================================================
-          8. FOOTER
+          SECTION 7: PREMIUM FOOTER
           ==================================================================== */}
       <footer id="contact" className="savera-footer">
         <div className="container">
           <div className="row g-5 text-start">
             {/* Col 1: Brand & Logo */}
             <div className="col-lg-4 col-md-6">
-              <div className="d-flex align-items-center gap-3">
-                <div className="savera-logo-wrap">
-                  <img src="/logo.jpg" alt="SAVÉRA Logo" className="savera-logo-img" />
+              <div className="d-flex align-items-center gap-3 mb-3">
+                <div className="savera-logo-box">
+                  <svg className="savera-aviation-emblem" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                    <circle cx="20" cy="20" r="18" stroke="#D9B477" strokeWidth="1.2" strokeOpacity="0.6" />
+                    <path
+                      d="M20 7L24 16L33 19L24 22L20 33L16 22L7 19L16 16L20 7Z"
+                      fill="#D9B477"
+                      fillOpacity="0.3"
+                      stroke="#D9B477"
+                      strokeWidth="1.4"
+                    />
+                    <circle cx="20" cy="19.5" r="2.2" fill="#D9B477" />
+                  </svg>
                 </div>
                 <div>
                   <span className="savera-brand-title">SAVÉRA</span>
-                  <span className="savera-brand-sub d-block">AVIATION TECHNOLOGIES</span>
+                  <span className="savera-brand-sub d-block">AIRLINE OPERATIONS</span>
                 </div>
               </div>
 
@@ -561,30 +636,31 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
                 “Fly Smarter. Grow Bigger.”
               </div>
 
+              {/* Social Media Links */}
               <div className="footer-social-row">
                 {/* LinkedIn */}
-                <a href="#linkedin" className="social-icon-box" title="LinkedIn">
+                <a href="#linkedin" className="social-icon-box" title="LinkedIn" aria-label="SAVÉRA LinkedIn">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                     <rect x="2" y="9" width="4" height="12"></rect>
                     <circle cx="4" cy="4" r="2"></circle>
                   </svg>
                 </a>
-                {/* Twitter / X */}
-                <a href="#twitter" className="social-icon-box" title="X / Twitter">
+                {/* X (Twitter) */}
+                <a href="#twitter" className="social-icon-box" title="X / Twitter" aria-label="SAVÉRA X">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    <path d="M4 4l16 16M4 20L20 4"></path>
                   </svg>
                 </a>
                 {/* YouTube */}
-                <a href="#youtube" className="social-icon-box" title="YouTube">
+                <a href="#youtube" className="social-icon-box" title="YouTube" aria-label="SAVÉRA YouTube">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
                     <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
                   </svg>
                 </a>
                 {/* Instagram */}
-                <a href="#instagram" className="social-icon-box" title="Instagram">
+                <a href="#instagram" className="social-icon-box" title="Instagram" aria-label="SAVÉRA Instagram">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -601,7 +677,7 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
                 <li className="footer-link-item"><a href="#home">Home</a></li>
                 <li className="footer-link-item"><a href="#features">Features</a></li>
                 <li className="footer-link-item"><a href="#about">About</a></li>
-                <li className="footer-link-item"><a href="#flightripple">FlightRipple™</a></li>
+                <li className="footer-link-item"><a href="#flightripple">FlightRipple</a></li>
                 <li className="footer-link-item"><a href="#how-it-works">How It Works</a></li>
                 <li className="footer-link-item">
                   <a
@@ -609,7 +685,7 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
                     onClick={(e) => {
                       if (onOpenContact) {
                         e.preventDefault();
-                        onOpenContact();
+                        onOpenContact('Executive Inquiry');
                       }
                     }}
                   >
@@ -619,7 +695,7 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
               </ul>
             </div>
 
-            {/* Col 3: Operational Suite */}
+            {/* Col 3: Operations Suite */}
             <div className="col-lg-3 col-md-6">
               <div className="footer-col-title">Operations Suite</div>
               <ul className="footer-links-list">
@@ -635,14 +711,14 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
             {/* Col 4: Global HQ & Staff Portal */}
             <div className="col-lg-3 col-md-6">
               <div className="footer-col-title">Carrier Support</div>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '12px' }}>
-                24/7 Operations Control Support for verified airline dispatchers.
+              <p className="footer-support-text">
+                24/7 Operations Control Support for certified airline dispatchers.
               </p>
-              <div style={{ fontSize: '0.88rem', color: '#fff', marginBottom: '8px' }}>
-                <strong style={{ color: 'var(--gold-400)' }}>OCC Hotline:</strong> +1 (800) 555-SAVERA
+              <div className="footer-contact-item">
+                <strong style={{ color: 'var(--soft-gold)' }}>OCC Hotline:</strong> +1 (800) 555-SAVERA
               </div>
-              <div style={{ fontSize: '0.88rem', color: '#fff', marginBottom: '20px' }}>
-                <strong style={{ color: 'var(--gold-400)' }}>Dispatch:</strong> ops@savera-aviation.com
+              <div className="footer-contact-item mb-3">
+                <strong style={{ color: 'var(--soft-gold)' }}>Dispatch:</strong> ops@savera-aviation.com
               </div>
 
               <button
@@ -662,7 +738,7 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
           {/* Bottom Bar: Copyright & Compliance */}
           <div className="footer-bottom-row">
             <div>
-              © {new Date().getFullYear()} SAVÉRA Aviation Technologies Inc. All rights reserved.
+              © 2026 SAVÉRA. All rights reserved.
             </div>
 
             <div className="footer-status-badge">
@@ -671,11 +747,11 @@ function Home({ onOpenStaffLogin, onOpenContact, onSelectFeature }) {
             </div>
 
             <div className="d-flex gap-3">
-              <a href="#privacy" style={{ color: 'var(--text-muted)', fontSize: '0.82rem' }}>Privacy Policy</a>
-              <span>•</span>
-              <a href="#terms" style={{ color: 'var(--text-muted)', fontSize: '0.82rem' }}>Terms of Service</a>
-              <span>•</span>
-              <a href="#security" style={{ color: 'var(--text-muted)', fontSize: '0.82rem' }}>IATA Compliance</a>
+              <a href="#privacy" className="footer-legal-link">Privacy Policy</a>
+              <span className="text-muted">•</span>
+              <a href="#terms" className="footer-legal-link">Terms of Service</a>
+              <span className="text-muted">•</span>
+              <a href="#security" className="footer-legal-link">IATA Compliance</a>
             </div>
           </div>
         </div>

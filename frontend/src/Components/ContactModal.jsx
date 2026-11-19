@@ -39,18 +39,18 @@ function ContactModal({ isOpen, onClose, defaultSubject = 'General Inquiry' }) {
           <div className="luxury-badge mb-2">{defaultSubject.toUpperCase()}</div>
           <h3 className="modal-title">Request Carrier Briefing</h3>
           <p className="modal-subtitle">
-            Schedule an executive demonstration of SAVÉRA and the FlightRipple™ engine with our senior aviation specialists.
+            Schedule an executive demonstration of SAVÉRA and the FlightRipple™ engine with our senior airline operations team.
           </p>
         </div>
 
         {submitted ? (
-          <div className="p-4 text-center rounded" style={{ background: 'rgba(52, 211, 153, 0.15)', border: '1px solid rgba(52, 211, 153, 0.4)' }}>
+          <div className="p-4 text-center rounded-4" style={{ background: 'rgba(52, 211, 153, 0.15)', border: '1px solid rgba(52, 211, 153, 0.4)' }}>
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#34d399" strokeWidth="2.5" className="mb-2">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
-            <h4 style={{ color: '#fff', fontFamily: 'var(--font-serif)', fontSize: '1.2rem' }}>Briefing Request Dispatched</h4>
-            <p style={{ color: '#cbd5e1', fontSize: '0.85rem', margin: 0 }}>
-              An enterprise operations director will connect with your dispatch team within 4 business hours.
+            <h4 style={{ color: '#FFFFFF', fontFamily: 'var(--font-serif)', fontSize: '1.25rem', marginBottom: '6px' }}>Briefing Request Dispatched</h4>
+            <p style={{ color: '#CBD5E1', fontSize: '0.86rem', margin: 0 }}>
+              An enterprise operations director will connect with your airline team within 4 business hours.
             </p>
           </div>
         ) : (
@@ -78,7 +78,7 @@ function ContactModal({ isOpen, onClose, defaultSubject = 'General Inquiry' }) {
                   <option value="under-20">Under 20 Aircraft</option>
                   <option value="20-100">20 – 100 Aircraft</option>
                   <option value="100-300">100 – 300 Aircraft</option>
-                  <option value="300-plus">300+ Aircraft (Global Carrier)</option>
+                  <option value="300-plus">300+ Aircraft (Global Flag Carrier)</option>
                 </select>
               </div>
 
